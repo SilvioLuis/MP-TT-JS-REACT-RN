@@ -1,0 +1,22 @@
+#login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+#login .container h1 {
+    text-align: center;
+    color: #fff;
+}
+
+#login .container .card{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#login .container .card input{
+    margin-bottom: 20px;
+}
