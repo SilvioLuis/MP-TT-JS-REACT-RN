@@ -1,0 +1,29 @@
+#main_content {
+    width: 100%;
+    height: calc(100% - 120px) !important;
+    position: fixed;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#page_title {
+    text-align: center;
+    padding: 10px;
+}
+
+#items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    width: 130px;
+    height: 130px;
+    margin: 5px;
+    border-radius: 20px;
+    border: 1px solid #6e25ad;
+}
+
