@@ -1,29 +1,10 @@
-#main_content {
-    width: 100%;
-    height: calc(100% - 120px) !important;
-    position: fixed;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
+#mainMenu {
+    list-style: none;
+    padding: 0;
+    padding-top: 20px;
 }
 
-#page_title {
-    text-align: center;
-    padding: 10px;
+#mainMenu li {
+    padding: 10px 20px;
+    color: #fff;
 }
-
-#items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.item {
-    display: flex;
-    width: 130px;
-    height: 130px;
-    margin: 5px;
-    border-radius: 20px;
-    border: 1px solid #6e25ad;
-}
-

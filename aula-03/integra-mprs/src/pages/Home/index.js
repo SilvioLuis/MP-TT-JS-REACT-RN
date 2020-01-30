@@ -1,41 +1,53 @@
 import React, { Component } from 'react';
 
-import Carousel from 're-carousel'
-
 import Header from '../../components/Header'
 import Footer from '../../components/Footer'
+import Favoritos from '../../components/Favoritos'
+
+import Drawer from 'react-motion-drawer';
+
 import './styles.css'
 
 export default class Home extends Component {
+
+    state = {
+        drawerOpened: false
+    }
+
+    componentDidMount() {
+        window.addEventListener('openDrawer', () => { this.setState({ drawerOpened: true }) })
+    }
+
     render() {
         return (
-            <div id="home">
-                <Header />
+            <>
+                <Drawer 
+                    open={this.state.drawerOpened} 
+                    noTouchOpen
+                    noTouchClose
+                    onChange={(open) => { 
+                        this.setState({ drawerOpened: open })
+                    }}
+                    drawerStyle={{
+                        backgroundColor: "#6e25ad"
+                    }}
+                >
+                    <ul id="mainMenu">
+                        <li>Meu Perfil</li>
+                        <li>Configurações</li>
+                        <li>Favoritos</li>
+                        <li>FAQ</li>
+                        <li>Perfil</li>
+                    </ul>
+                </Drawer>
+                <div id="home">
+                    <Header />
+                    
+                    <Favoritos />
                 
-                <div id="main_content">
-                    <h3 id="page_title">Integra MPRS</h3>
-
-                    <Carousel>
-                        <div id="items">
-                            {[1, 2, 3, 4, 5, 6].map(i => (
-                                <div key={i} className="item"></div>
-                            ))}
-                        </div>
-                        <div id="items">
-                            {[1, 2, 3, 4, 5, 6].map(i => (
-                                <div key={i} className="item"></div>
-                            ))}
-                        </div>
-                        <div id="items">
-                            {[1, 2, 3, 4, 5, 6].map(i => (
-                                <div key={i} className="item"></div>
-                            ))}
-                        </div>
-                    </Carousel>
+                    <Footer />
                 </div>
-
-                <Footer />
-            </div>
+            </>
         );
     }
 }
