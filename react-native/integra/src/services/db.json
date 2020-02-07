@@ -1,0 +1,42 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "cpf": 12312312312,
+        "senha": "123",
+        "foto": "https://img.cancaonova.com/cnimages/canais/uploads/sites/6/2018/03/formacao_o-que-a-lei-natural-permite-ao-homem-o-poder-de-discernir.jpg",
+        "nome": "João de Souza"
+      }
+    ],
+    "links": [
+      [
+        {
+          "id": 1,
+          "url": "https://google.com",
+          "imagem": "1.jpg"
+        }
+      ],
+      [
+        {
+          "id": 2,
+          "url": "https://linkedin.com",
+          "imagem": "2.png"
+        }
+      ]
+    ],
+    "favoritos": [
+      { "id": 1, "link_id": 1, "usuario_id": 1 }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "url": "https://google.com",
+        "imagem": "1.jpg"
+      },
+      {
+        "id": 2,
+        "url": "https://linkedin.com",
+        "imagem": "2.png"
+      }
+    ]
+  }

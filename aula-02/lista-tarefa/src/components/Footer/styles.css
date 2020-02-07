@@ -1,0 +1,26 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer button {
+    display: flex;
+    justify-content: center;  
+    width: 50%;  
+    color: #fff;
+    height: 70px;
+    opacity: 0.7;
+    cursor: pointer !important;
+}
+
+footer button.active_menu {
+    border-bottom: 2px solid #ffff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    opacity: 1;
+    background-color: #6e25ad;
+}
